@@ -28,6 +28,12 @@ app.use(passport.session());
 routes(app, passport);
 
 var port = process.env.PORT || 8080;
+
+app.get('/', function(req, res) {
+	//res.writeHead(200, {'content-type': 'text/plain'});
+	res.end('dddfffffffffffffffffffffff');
+});
+
 app.listen(port,  function () {
 	console.log('Node.js listening on port ' + port + '...');
 });
